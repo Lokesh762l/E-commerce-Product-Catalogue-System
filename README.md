@@ -1,128 +1,133 @@
 🛍 ShopSphere
-A Console-Based E-Commerce Product Catalog System (Java OOPS Project)
-📌 Project Description
+Console-Based E-Commerce System | Java OOPS Project
 
-ShopSphere is a menu-driven, console-based e-commerce application developed using Java to demonstrate core Object-Oriented Programming (OOPS) principles in a real-world scenario.
+📌 Overview
 
-The system allows users to browse product categories, add items to a shopping cart, manage quantities, apply discounts, calculate GST, and generate a detailed tax invoice with shipping information.
+ShopSphere is a console-based E-Commerce Product Catalog System built using Java to demonstrate practical implementation of Object-Oriented Programming (OOPS) concepts.
 
-This project simulates the working of a basic online shopping platform.
+The application simulates a real-world online shopping system with:
 
-🎯 Objectives
+Product catalog
 
-To implement real-world OOPS concepts in Java
+Shopping cart
 
-To design a modular and scalable application
+Discount logic
 
-To simulate cart management and billing logic
+GST calculation
 
-To demonstrate abstraction, inheritance, and polymorphism practically
+Tax invoice generation
 
-🧠 OOPS Concepts Implemented
-🔹 1. Abstraction
+Shipping & order tracking
 
-Product is an abstract class.
+🎯 Key Highlights
 
-Defines common structure for all products.
+🧠 Strong OOPS implementation
 
-Abstract methods:
+🛒 Fully functional cart system
+
+🧾 Dynamic billing with tax & discount
+
+📦 Shipping ID & delivery tracking
+
+📅 Expected delivery date calculation
+
+🏷 Category-based product hierarchy
+
+🧠 OOPS Concepts Used
+🔹 Abstraction
+
+Product is an abstract class defining:
 
 calculateDiscountedPrice()
 
 displayDetails()
 
-🔹 2. Inheritance
+🔹 Inheritance
 
-Specialized product classes extend Product:
+The following classes extend Product:
 
-Book
+📚 Book
 
-Electronics
+💻 Electronics
 
-Clothing
+👕 Clothing
 
-Toy
+🧸 Toy
 
-Grocery
+🛒 Grocery
 
-Each subclass has its own unique attribute and discount logic.
-
-🔹 3. Polymorphism
+🔹 Polymorphism
 
 Each subclass overrides:
 
 calculateDiscountedPrice()
 
 
-Example:
+Each product category has its own discount logic.
 
-Books → 15% discount
+🔹 Encapsulation
 
-Electronics → 10% discount
+Product data stored inside objects
 
-Clothing → 20% discount
+Cart managed using ArrayList<CartItem>
 
-Toys → 12% discount
-
-Groceries → 5% discount
-
-🔹 4. Encapsulation
-
-Data stored within objects
-
-Controlled via constructors and methods
-
-Cart items stored using ArrayList<CartItem>
+Controlled access through constructors and methods
 
 🛒 Features
 
-✔ Multiple Product Categories
-✔ Add to Cart
-✔ Update Quantity
-✔ Remove Items
-✔ Apply Additional Discount (%)
-✔ GST (18%) Calculation
-✔ Shipping ID Generation
-✔ Order Status Tracking
-✔ Expected Delivery Date
-✔ Detailed Tax Invoice
-✔ Default Customer Details
-
-🏬 Product Categories
-
-📚 Books
-
-💻 Electronics
-
-👕 Clothing
-
-🧸 Toys
-
-🛒 Groceries
-
-🧾 Billing System
-
-The checkout system calculates:
-
-Subtotal
-
-Discount Amount
-
-GST (18%)
-
-Final Payable Amount
-
-Shipping ID
-
-Order Date
-
-Expected Delivery (5 Days)
-
-Order Status
+✔ Multiple product categories
+✔ Add to cart
+✔ Update quantity
+✔ Remove items
+✔ Apply extra discount (%)
+✔ GST (18%) auto-calculation
+✔ Detailed invoice generation
+✔ Shipping ID generation
+✔ Order status tracking
+✔ Expected delivery date
 
 👤 Default Customer Details
 Name    : Lokesh
 Address : Kautilya Hostel, NIT Patna, Bihta
+
+🧾 Billing System
+
+The checkout process includes:
+
+Subtotal calculation
+
+Discount deduction
+
+GST addition (18%)
+
+Final total amount
+
+Order date
+
+Expected delivery date (5 days)
+
+Shipping ID
+
+Order status
+
+🖥 Sample Output
+================= INVOICE =================
+Customer: Lokesh
+Address : Kautilya Hostel, NIT Patna, Bihta
+-------------------------------------------
+1. Laptop | Qty: 1 | Unit: 46800 | Line: 46800
+-------------------------------------------
+Subtotal: 46800
+Discount (5%): -2340
+GST (18%): +8017.2
+-------------------------------------------
+TOTAL: 52477.2
+-------------------------------------------
+Order Date: 15-Feb-2026
+Expected Delivery: 20-Feb-2026
+Order Status: Shipped
+Shipping ID: SHP10452
+===========================================
 
 📂 Project Structure
 ShopSphere/
@@ -137,101 +142,57 @@ ShopSphere/
 ├── ShopSphereMain.java
 └── README.md
 
-🔄 Application Workflow
+▶ How to Run
+1️⃣ Compile All Files
+javac *.java
 
-Display product categories
-
-User selects category
-
-Products displayed with details
-
-User selects product & quantity
-
-Item added to cart
-
-User can:
-
-View cart
-
-Remove item
-
-Update quantity
-
-Checkout
-
-Apply additional discount
-
-Invoice generated
-
-Order confirmed
-
-🧮 Sample Invoice Output
-================= INVOICE =================
-Customer: Lokesh
-Address : Kautilya Hostel, NIT Patna, Bihta
--------------------------------------------
-1. Atomic Habits | Qty: 2 | Unit: 424 | Line: 848
--------------------------------------------
-Subtotal: 848
-Discount (5%): -42.4
-GST (18%): +145.008
--------------------------------------------
-TOTAL: 950.608
--------------------------------------------
-Order Date: 15-Feb-2026
-Expected Delivery: 20-Feb-2026
-Order Status: Shipped
-Shipping ID: SHP10245
-===========================================
+2️⃣ Run the Application
+java ShopSphereMain
 
 🛠 Technologies Used
 
 Java
 
-OOPS Concepts
+OOPS Principles
 
-Java Collections Framework (ArrayList)
+Java Collections (ArrayList)
 
 Java Time API
 
 Console-based UI
 
-▶ How to Run the Project
-Step 1: Compile all files
-javac *.java
+📚 Learning Outcomes
 
-Step 2: Run the main class
-java ShopSphereMain
+This project helped in understanding:
 
-📈 Learning Outcomes
+Real-world OOPS application design
 
-By completing this project, you gain:
+Class hierarchy modeling
 
-Strong understanding of OOPS concepts
+Polymorphic behavior
 
-Experience building modular Java applications
+Billing & tax logic implementation
 
-Knowledge of cart and billing logic
+Menu-driven console applications
 
-Understanding of real-world product hierarchy
+Modular project structure
 
-Practice with Java collections and time API
+🚀 Future Improvements
 
-🚀 Future Enhancements
+🔐 User authentication system
 
-Database integration (MySQL / JDBC)
+💳 Payment gateway integration
 
-Login & Authentication system
+🗄 Database connectivity (JDBC + MySQL)
 
-Payment gateway simulation
+🖥 GUI version using Swing or JavaFX
 
-GUI version using Swing or JavaFX
+🛠 Admin dashboard
 
-Admin panel for product management
-
-Order history system
+📦 Order history management
 
 👨‍💻 Author
 
 Lokesh
 B.Tech CSE
+NIT Patna
